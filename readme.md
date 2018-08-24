@@ -43,9 +43,9 @@ getPluginNum (“Example”) '返回插件编号
 
 Trigger (“onMotd”, “Argument”) '让所有插件触发onMotd方法，并且传入Argument参数，会返回这样的数据:
 
-> #Header
-> 插件名|方法:运行得到的返回值
-> #End
+* #Header
+* 插件名|方法:运行得到的返回值
+* #End
 
 getPluginName (1) '获取编号是1的插件的名字
 
@@ -54,8 +54,8 @@ getPluginName (1) '获取编号是1的插件的名字
 * “0.0.1”
 * 1
 * “#Header
-Example|onMotd:Inputd!!
-#End”
+* Example|onMotd:Inputd!!
+* #End”
 * “Example”
 
 ---
