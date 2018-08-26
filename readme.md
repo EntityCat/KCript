@@ -11,7 +11,7 @@
    
 .DLL命令 Enable, , "KCript.dll", "Enable", , 重载插件列表   
    
-.DLL命令 Tripper, 文本型, "KCript.dll", "Tripper", , 返回#header开头#end结尾的数据，自己测试   
+.DLL命令 Trigger, 文本型, "KCript.dll", "Trigger", , 返回#header开头#end结尾的数据，自己测试   
     .参数 种类, 文本型, , 插件里的方法名   
     .参数 参数, 文本型, , 传进去的东西   
    
