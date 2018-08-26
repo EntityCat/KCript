@@ -1,7 +1,7 @@
 # KCript >>
 ---
  一个简单的插件框架，目前正在完善中..   
- 已经正式开源   
+ 已经正式开源(MIT License)   
 作者:EntityCat_ , By [SaltedFish Troll](https://sfclub.cc/)   
 
 ## 函数列表(易语言，复制粘贴到程序即可)
