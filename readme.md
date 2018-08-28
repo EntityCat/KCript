@@ -1,13 +1,15 @@
 # KCript >>
 ---
- 一个简单的插件框架，目前正在完善中..   
+ 一个简单的插件框架，目前正在完善中..
+ 插件编写wiki施工中...    
  已经正式开源(MIT License)   
-作者:[EntityCat_](tencent://message/?uin=1713438554) , By [SaltedFish Troll](https://sfclub.cc/)   
+作者:[EntityCat_](http://blog.sfclub.cc/) , By [SaltedFish Troll](https://sfclub.cc/)   
 
 ## 函数列表(易语言，复制粘贴到程序即可)
 .版本 2   
    
 .DLL命令 Initialize, 整数型, "KCript.dll", "Initialize", , 请先使用这个初始化。   
+    .参数 PluginFolder, 文本型, , 传入存放插件/SDK的文件夹名字，不需要加\,填写""则使用Plugins   
    
 .DLL命令 Enable, , "KCript.dll", "Enable", , 重载插件列表   
    
@@ -28,7 +30,8 @@
    
 .DLL命令 freePlugin, , "KCript", "freePlugin", 公开, 卸载某插件(释放内存)   
     .参数 插件名字, 文本型   
-	
+   
+	   
 ---
 ## 基本使用的例子：
 Initialize () '先进行初始化才能调用下面的方法   
@@ -68,7 +71,8 @@ getPluginName (1) '获取编号是1的插件的名字
 ## 注意事项
 记得要把插件放到目录下的`\Plugins\`文件夹,而且回调/SDK的dll要命名成SDK.dll放进去~   
 Tripper全程单线程请让插件及时返回数据..   
-
+**demo.e请编译后测试!!!**   
+   
 ---
 ## FAQ&BUG：
 `当插件没有提供xxx方法的时候调用会直接出错，修复会在一个月内发布(吧)`    
@@ -83,7 +87,7 @@ A1:我们欢迎您发出新的Pull Request,因为作者也不是特别厉害,,
 Q1:未来计划?   
 A1:大概是一些安全上的问题和结构优化，写了CallBack之后我又对KCript的结构有了点dark胆的想法..233
    
-  
+   
 ---
 ## 特别鸣谢名单:   
 xiaoku: 指针回调思路   
