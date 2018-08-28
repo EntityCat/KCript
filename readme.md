@@ -28,10 +28,12 @@
 .DLL命令 getPluginNum, 整数型, "KCript.dll", "getPluginNum", , 获取插件编号   
     .参数 插件名字, 文本型   
    
-.DLL命令 freePlugin, , "KCript", "freePlugin", 公开, 卸载某插件(释放内存)   
+.DLL命令 freePlugin, , "KCript", "freePlugin", , 卸载某插件(释放内存)   
     .参数 插件名字, 文本型   
    
-	   
+.DLL命令 getPluginPath, 文本型, "KCript.dll", "getPath", , 获取插件文件绝对路径   
+    .参数 插件名字, 文本型      
+	
 ---
 ## 基本使用的例子：
 Initialize () '先进行初始化才能调用下面的方法   
