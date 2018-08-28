@@ -2,7 +2,7 @@
 ---
  一个简单的插件框架，目前正在完善中..   
  已经正式开源(MIT License)   
-作者:EntityCat_ , By [SaltedFish Troll](https://sfclub.cc/)   
+作者:[EntityCat_](tencent://message/?uin=1713438554) , By [SaltedFish Troll](https://sfclub.cc/)   
 
 ## 函数列表(易语言，复制粘贴到程序即可)
 .版本 2   
@@ -61,12 +61,12 @@ getPluginName (1) '获取编号是1的插件的名字
 ---
 ## 插件编写:
 请自己看PluginDemo.e   
-目前KCript只支持插件的管理和使用，不提供回调   
+目前KCript只支持插件的管理和使用，不提供回调,未来或许会`集成`   
 `所以sdk还是要你自己写的，不过后期我们可能会加上模板让你们改改就能用`已经实现到callback.e   
 
 ---
 ## 注意事项
-记得要把插件放到目录下的`\Plugins\`文件夹~   
+记得要把插件放到目录下的`\Plugins\`文件夹,而且回调/SDK的dll要命名成SDK.dll放进去~   
 Tripper全程单线程请让插件及时返回数据..   
 
 ---
@@ -86,7 +86,7 @@ A1:大概是一些安全上的问题和结构优化，写了CallBack之后我又
   
 ---
 ## 特别鸣谢名单:   
-xiaoku: 回调思路   
+xiaoku: 指针回调思路   
    
      
 	 
