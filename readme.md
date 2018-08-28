@@ -83,6 +83,13 @@ A1:我们欢迎您发出新的Pull Request,因为作者也不是特别厉害,,
 Q1:未来计划?   
 A1:大概是一些安全上的问题和结构优化，写了CallBack之后我又对KCript的结构有了点dark胆的想法..233
    
+  
 ---
 ## 特别鸣谢名单:   
 xiaoku: 回调思路   
+   
+     
+	 
+	 
+	 
+![KCript - Callback.png](https://i.loli.net/2018/08/28/5b84df3a2d88d.png)
