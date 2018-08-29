@@ -34,6 +34,9 @@
 .DLL命令 getPluginPath, 文本型, "KCript.dll", "getPath", , 获取插件文件绝对路径   
     .参数 插件名字, 文本型      
 	
+.DLL命令 openMenu, 逻辑型, "KCript.dll", "openMenu", , 打开插件的_Menu函数(加载菜单,如果有)   
+    .参数 插件名字, 文本型      
+		
 ---
 ## 基本使用的例子：
 Initialize () '先进行初始化才能调用下面的方法   
