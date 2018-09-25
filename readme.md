@@ -13,7 +13,7 @@
    
 .DLL命令 Enable, , "KCript.dll", "Enable", , 重载插件列表   
    
-.DLL命令 Trigger, 文本型, "KCript.dll", "Trigger", , 返回#header开头#end结尾的数据，自己测试   
+.DLL命令 Trigger, , "KCript.dll", "Trigger", , 返回#header开头#end结尾的数据，自己测试   
     .参数 种类, 文本型, , 插件里的方法名   
     .参数 参数, 文本型, , 传进去的东西   
    
@@ -31,8 +31,12 @@
 .DLL命令 freePlugin, , "KCript", "freePlugin", , 卸载某插件(释放内存)   
     .参数 插件名字, 文本型   
    
-.DLL命令 getPluginPath, 文本型, "KCript.dll", "getPath", , 获取插件文件绝对路径   
+.DLL命令 getConfPath, 文本型, "KCript.dll", "getConfPath", , 获取插件配置文件夹绝对路径,带\   
     .参数 插件名字, 文本型      
+	
+.DLL命令 run, 文本型, "KCript.dll", "run", , 让某插件运行某方法   
+    .参数 插件名字, 文本型      
+    .参数 方法名称, 文本型      
 	
 .DLL命令 openMenu, 逻辑型, "KCript.dll", "openMenu", , 打开插件的_Menu函数(加载菜单,如果有)   
     .参数 插件名字, 文本型      
@@ -48,13 +52,16 @@ getPluginList () '返回一个json格式的插件列表，看起来像这样：
 getVersion (“Example”) ’返回这个插件的版本号   
 
 getPluginNum (“Example”) '返回插件编号   
-
+   
+run (“Example”, “Fn”) '让Example插件触发Fn方法   
+   
 Trigger (“onMotd”, “Argument”) '让所有插件触发onMotd方法，并且传入Argument参数，会返回这样的数据:   
    
 * #Header
 * 插件名|方法:运行得到的返回值
 * #End
-
+从0.3.1-alpha开始,我们不再返回返回值,请自行在SDK里面重写您的Return方法   
+   
 getPluginName (1) '获取编号是1的插件的名字   
    
 以下是运行结果
