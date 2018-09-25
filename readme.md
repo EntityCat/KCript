@@ -31,12 +31,13 @@
 .DLL命令 freePlugin, , "KCript", "freePlugin", , 卸载某插件(释放内存)   
     .参数 插件名字, 文本型   
    
-.DLL命令 getConfPath, 文本型, "KCript.dll", "getConfPath", , 获取插件配置文件夹绝对路径,带\   
+.DLL命令 getConfPath, 文本型, "KCript.dll", "getConfPath", , 获取插件配置文件夹绝对路径.带\   
     .参数 插件名字, 文本型      
 	
-.DLL命令 run, 文本型, "KCript.dll", "run", , 让某插件运行某方法   
+.DLL命令 run, 文本型, "KCript.dll", "run", , 让某插件运行某方法,失败返回null   
     .参数 插件名字, 文本型      
     .参数 方法名称, 文本型      
+	.参数 方法参数, 文本型      
 	
 .DLL命令 openMenu, 逻辑型, "KCript.dll", "openMenu", , 打开插件的_Menu函数(加载菜单,如果有)   
     .参数 插件名字, 文本型      
@@ -46,14 +47,14 @@
 Initialize () '先进行初始化才能调用下面的方法   
 
 getPluginList () '返回一个json格式的插件列表，看起来像这样：   
-`{"Num1":"Example"}`   
+`["{\"Name\":\"Example\"}"]`   
    Num后面是他的编号,Example就是名字   
 
 getVersion (“Example”) ’返回这个插件的版本号   
 
 getPluginNum (“Example”) '返回插件编号   
    
-run (“Example”, “Fn”) '让Example插件触发Fn方法   
+run (“Example”, “Fn” , "233") '让Example插件触发Fn方法并且传进233   
    
 Trigger (“onMotd”, “Argument”) '让所有插件触发onMotd方法，并且传入Argument参数，会返回这样的数据:   
    
